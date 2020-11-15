@@ -20,14 +20,16 @@ public class Hooks {
 
     @Before
     public void beforeScenario() {
-        try (InputStream input = new FileInputStream("/home/sumesh/Documents/Kafka/phpTravel_automation_UI_API/src/test/resources/environment.properties")) {
+        String pathDirectory = System.getProperty("user.dir");
+        System.out.println(pathDirectory);
+        try (InputStream input = new FileInputStream(pathDirectory+"/src/test/resources/environment.properties")) {
             Properties prop = new Properties();
             prop.load(input);
             URL = prop.getProperty("url");
             Automation = prop.getProperty("Automation");
             Browser = prop.getProperty("browser");
             if (Browser.equalsIgnoreCase("chrome")) {
-                System.setProperty("webdriver.chrome.driver", "/home/sumesh/Documents/Kafka/phpTravel_automation_UI_API/src/chromedriver_linux64/chromedriver");
+                System.setProperty("webdriver.chrome.driver", pathDirectory+"/src/Driver/chromedriver.exe");
                 driver = new ChromeDriver();
                 driver.get(URL);
             }
