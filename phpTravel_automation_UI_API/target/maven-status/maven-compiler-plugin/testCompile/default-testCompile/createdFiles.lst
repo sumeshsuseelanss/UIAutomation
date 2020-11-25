@@ -1,3 +1,6 @@
-com/testrunner/TestRunner.class
-com/UI/stepDefinition/Hooks.class
-com/UI/stepDefinition/PhpTravelLoginStepDefintion.class
+com\UI\stepDefinition\Hooks.class
+com\UI\stepDefinition\PhpTravelLoginStepDefintion.class
+com\UI\objectMap\LoginObj.class
+com\testrunner\TestRunner.class
+com\UI\Events\Events.class
+com\UI\user\methods\Login.class
