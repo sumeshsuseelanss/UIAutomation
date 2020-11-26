@@ -7,4 +7,4 @@ Feature: PHP Travel page validation
     Then  Message displayed Login Successfully
     Examples:
       | UserName   | Password |
-      | xyz@gmail.com | xyz |
+      | xyz@gmail.com| xyz |

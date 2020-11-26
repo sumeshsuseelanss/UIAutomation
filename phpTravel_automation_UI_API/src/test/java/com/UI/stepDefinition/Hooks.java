@@ -1,10 +1,12 @@
 package com.UI.stepDefinition;
 
+import com.cucumber.listener.Reporter;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,10 +39,12 @@ public class Hooks {
             ex.printStackTrace();
         }
 
+
+
+
+
+
     }
 
-    @After
-    public void afterScenario() {
-        System.out.println("This will run after the Scenario");
-    }
+
 }
